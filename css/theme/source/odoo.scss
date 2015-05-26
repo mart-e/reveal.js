@@ -1,0 +1,123 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #ffffff;
+
+$mainColor: #000000;
+$headingColor: #8f8f8f;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 500;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.0em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+    .slides section {
+        height: 700px;
+        padding: 0;
+        text-align: left;
+        // odoo logo on the bottom left corner
+        background-image: url(odoo_logo.png);
+        background-size: 96px;                  // result size: 96x31
+        background-position: 20px 649px;
+        background-repeat: no-repeat;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 1em;
+    }
+    h2 {
+        // slides header
+        margin-left: 3em;
+        padding-left: .5em;
+        padding-right: .5em;
+        border-bottom-color: #a24689;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .slides section.title {
+        // title slide, pink & white
+        padding: 0;
+        background-image: none;                 // no logo here
+        h1 {
+            display: flex;
+            align-items: flex-end;
+            align-content: flex-end;
+            height: 60%;
+            margin: 0;
+            padding: 0 10%;
+            color: #fff;
+            background-color: #a24689;
+            // white logo at the top left corner
+            background-image: url(odoo_logo_white.png);
+            background-size: 96px;              // result size: 96x31
+            background-position: 20px 20px;
+            background-repeat: no-repeat;
+        }
+        h2, h3, h4, h5, h6 {
+            margin-left: 0;
+            padding-left: 10%;
+        }
+    }
+    .slides section.chapter {
+        // chapter slide, all pink
+        padding: 0;
+        color: #fff;
+        background-color: #a24689;
+        // white logo at the top left corner
+        background-image: url(odoo_logo_white.png);
+        background-size: 96px;              // result size: 96x31
+        background-position: 20px 20px;
+        background-repeat: no-repeat;
+        h1 {
+            display: flex;
+            align-items: flex-end;
+            align-content: flex-end;
+            height: 60%;
+            margin: 0;
+            padding: 0 10%;
+            color: #fff;
+        }
+        p, h2, h3, h4, h5, h6 {
+            margin-left: 0;
+            padding-left: 10%;
+            color: #fff;
+        }
+    }
+}
+

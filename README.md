@@ -8,7 +8,7 @@ reveal.js comes with a broad range of features including [nested slides](https:/
 ## How to use it
 
 - Clone this repository on your computer.
-- Create your HTML presentation file.
+- Create your HTML presentation file (see the file ``odoo-example.html``.)
 - Show/view it with your browser.
 
 
