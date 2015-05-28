@@ -58,6 +58,9 @@ section.has-dark-background {
         background-position: 20px 649px;
         background-repeat: no-repeat;
     }
+    .slides section.nested {
+        background-image: none;
+    }
     h1, h2, h3, h4, h5, h6 {
         margin-bottom: 1em;
     }

@@ -274,6 +274,8 @@ body {
   background-size: 96px;
   background-position: 20px 649px;
   background-repeat: no-repeat; }
+.reveal .slides section.nested {
+  background-image: none; }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin-bottom: 1em; }
 .reveal h2 {
